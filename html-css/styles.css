@@ -12,3 +12,21 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: ;
+}
+header{
+    position: fixed;
+    background-color: black;
+    color: rgb(42, 171, 226);
+}
+nav{
+    color: white;
+}
+.picture{
+    height: 200px;
+    width: auto;
+}

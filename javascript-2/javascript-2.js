@@ -35,7 +35,10 @@ let foods = [
   and then adding the results together. 
 */
 
-//CODE HERE
+// foods.forEach((Element, index, array)=>{
+//   element = calories
+//   calories = ((food[index].carbs*4)+(food[index].protein*4)+(food[index].fat*9))
+// })
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -80,7 +83,9 @@ const products = [
   Save the copy to a new variable called 'saleProducts'.
 */
 
-//CODE HERE
+let saleProducts = products.map((item)=>{
+  item.price / 0.25
+})
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -90,7 +95,9 @@ const products = [
   (Hint: look up the array method 'includes' on MDN)
 */
 
-//CODE HERE
+let blueProducts = saleProducts.filter((item)=>{
+  item.color[i].includes('blue')
+})
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -99,7 +106,9 @@ const products = [
   Save the result to a variable called orderTotal.
 */
 
-//CODE HERE
+let orderTotal = blueProducts.reduce((acc, curr)=>{
+  blueProducts.price
+},0)
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -129,7 +138,7 @@ const shippingInfo = {
   that combines the contactInfo and shippingInfo objects.
 */
 
-//CODE HERE
+const helensInfo = Object.assign(contactInfo, shippingInfo)
 
 ////////////////////PROBLEM 6////////////////////
 /*
@@ -138,7 +147,9 @@ const shippingInfo = {
   Overwrite the name property to 'Ellen' and the email address to 'ellen@email.com'.
 */
 
-//CODE HERE
+let ellensInfo = {...helensInfo}
+ellensInfo.name = 'Ellen'
+ellensInfo.email = 'ellen@gmail.com'
 
 ////////////////////PROBLEM 7////////////////////
 /* 
@@ -273,10 +284,10 @@ const workout = {
   },
 }
 
-//let context1 = myFunc
-//let context1 = window
-//let context1 = global
-// let context1 = workout
+// let context1 = myFunc
+// let context1 = window
+// let context1 = global
+let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -289,6 +300,6 @@ function myFunc() {
 }
 
 //let context2 = myFunc
-// let context2 = window
+let context2 = window
 //let context2 = global
 //let context2 = workout

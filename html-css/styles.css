@@ -16,17 +16,42 @@ the font is called 'nunito' and can be found on google fonts
 *{
     padding: 0;
     margin: 0;
-    font-family: ;
+    /* font-family: ; */
 }
 header{
+    display: flex;
     position: fixed;
     background-color: black;
     color: rgb(42, 171, 226);
+    width: 100vw;
+}
+h1{
+    display: relative;
 }
 nav{
     color: white;
 }
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(102, 75, 75, .3);
+}
 .picture{
     height: 200px;
     width: auto;
+}
+footer{
+    background-color:  rgb(42, 171, 226);
+    display: inline-block;
+    width: 100vw;
+}
+.questions{
+    position: fixed;
+    right: 0px;
+    border: solid 3px black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
 }

@@ -16,42 +16,87 @@ the font is called 'nunito' and can be found on google fonts
 *{
     padding: 0;
     margin: 0;
-    /* font-family: ; */
+    font-family: 'Lato', sans-serif;
 }
 header{
     display: flex;
-    position: fixed;
+    align-items: center;
+    position: sticky;
+    top: 0;
     background-color: black;
     color: rgb(42, 171, 226);
-    width: 100vw;
+    width: 100%;
+    height: 10vh;
 }
-h1{
-    display: relative;
+.learn{
+    position: relative;
+    left: 20px;
 }
 nav{
     color: white;
+    position: absolute;
+    right: 20px;
+}
+.tag{
+    padding-left: 75px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    float: right;
 }
 .box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(102, 75, 75, .3);
+    box-shadow:0 0 20px rgba(102, 75, 75, .3);
+    height: auto;
+    width: 300px;
+    margin: 30px 150px 0 150px;
+}
+.list{
+    margin: 10px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:35px 0 15px 150px ;
+}
+p{
+    margin-top: 25px;
+}
+div{
+    display: flex;
+    justify-content: flex-end;
+}
+.link{
+    text-decoration: none;
+    color: rgb(42, 171, 226);
 }
 .picture{
-    height: 200px;
+    height: 150px;
     width: auto;
+    margin: 20px
 }
 footer{
+    display: flex;
+    align-items: center;
     background-color:  rgb(42, 171, 226);
-    display: inline-block;
-    width: 100vw;
+    width: 100%;
+    height: 6vh;
+    font-size: 10px;
 }
 .questions{
+    font-size: large;
     position: fixed;
     right: 0px;
+    bottom: 5px;
+    right: 5px;
     border: solid 3px black;
+    background-color:  rgb(42, 171, 226);
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 35px;
+    width: 35px;
 }
